@@ -7,55 +7,6 @@
     tools:context="com.example.tenma.wolkapp.MainActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="歩数計"
-        android:textSize="50dp"
-        android:textStyle="italic"
-        tools:layout_editor_absoluteX="265dp"
-        tools:layout_editor_absoluteY="79dp"
-        android:layout_marginTop="64dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="スタート"
-        android:textSize="20dp"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="403dp"
-        android:layout_alignBaseline="@+id/button2"
-        android:layout_alignBottom="@+id/button2"
-        android:layout_toStartOf="@+id/textView" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ストップ"
-        android:textSize="20dp"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="404dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="86dp" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="リセット"
-        android:textSize="20dp"
-        tools:layout_editor_absoluteX="265dp"
-        tools:layout_editor_absoluteY="403dp"
-        android:layout_alignBaseline="@+id/button2"
-        android:layout_alignBottom="@+id/button2"
-        android:layout_toEndOf="@+id/textView" />
-
-    <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -63,7 +14,47 @@
         android:textSize="50dp"
         tools:layout_editor_absoluteX="113dp"
         tools:layout_editor_absoluteY="79dp"
+        android:layout_marginStart="33dp"
         android:layout_centerVertical="true"
-        android:layout_toEndOf="@+id/textView"
-        android:layout_marginStart="16dp" />
+        android:layout_toEndOf="@+id/imageButton5" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        android:background="#00000000"
+        app:srcCompat="@drawable/start"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        app:srcCompat="@drawable/stop"
+        android:layout_alignTop="@+id/imageButton4"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        app:srcCompat="@drawable/reset"
+        android:layout_alignBottom="@+id/imageButton4"
+        android:layout_alignStart="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        app:srcCompat="@drawable/apptitlepng" />
+
+
 </RelativeLayout>
